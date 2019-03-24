@@ -61,7 +61,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="http://register/public/usersAccount">Home</a></li>
+                <li class="active"><a href="/resources/views/usersAccount/usersAccount.blade.php">Home</a></li>
                 <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
             </ul>
@@ -72,9 +72,9 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"> {{ Auth::user()->name }}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://shirakcollege/public/usersAccount#">HOME</a></li>
-                        <li><a href="http://shirakcollege/public/aboutUsers">ABOUT ME</a></li>
-                        <li><a href="http://shirakcollege/public/usersInfo">CHANGE</a></li>
+                        <li><a href="/resources/views/usersAccount/usersAccount.blade.php">HOME</a></li>
+                        <li><a href="/resources/views/aboutUsers/aboutUsersPhp.blade.php">ABOUT ME</a></li>
+                        <li><a href="/resources/views/usersInfo/usersInfo.blade.php">CHANGE</a></li>
                     </ul>
                 <li>
                     <a href="{{ route('logout') }}"
@@ -100,7 +100,7 @@
             <div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="http://shirakcollege/public/product"><i class="	glyphicon glyphicon-list-alt"></i>Product</a></li>
+                    <li><a href="/resources/views/product/product.blade.php"><i class="	glyphicon glyphicon-list-alt"></i>Product</a></li>
                     <li><a href="tables.html"><i class="glyphicon glyphicon-book"></i> Category</a></li>
                     <li><a href="http://shirakcollege/public/content"><i class="glyphicon glyphicon-record"></i> Content</a></li>
                     <li><a href="editors.html"><i class="glyphicon glyphicon-pencil"></i> Orders</a></li>

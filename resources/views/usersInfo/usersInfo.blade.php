@@ -29,7 +29,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="http://register/public/usersAccount">Home</a></li>
+                <li class="active"><a href="/resources/views/usersAccount/usersAccount.blade.php">Home</a></li>
                 <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
             </ul>
@@ -40,9 +40,9 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"> {{ Auth::user()->name }}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://register/public/usersAccount#">HOME</a></li>
-                        <li><a href="http://register/public/aboutUsers">ABOUT ME</a></li>
-                        <li><a href="http://register/public/usersInfo">CHANGE</a></li>
+                        <li><a href="/resources/views/usersAccount/usersAccount.blade.php">HOME</a></li>
+                        <li><a href="/resources/views/aboutUsers/aboutUsersPhp.blade.php">ABOUT ME</a></li>
+                        <li><a href="/resources/views/usersInfo/usersInfo.blade.php">CHANGE</a></li>
                     </ul>
                 <li>
                     <a href="{{ route('logout') }}"

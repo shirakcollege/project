@@ -14,7 +14,50 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link href="../../../public/css/styles.css" type="text/css" media="screen, projection" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="../../../public/css/styles.css" type="text/css" media="screen, projection" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../public/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../public/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../../public/css/bootstrap-datetimepicker.min.css" />
+        <link href="../../../public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../public/css/styles.css" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+        <!-- Bootstrap -->
+        <link href="../../../public/css/bootstrap.min.css" rel="stylesheet">
+        <!-- styles -->
+        <link href="../../../public/css/styles.css" rel="stylesheet">
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+        <link href="vendors/select/bootstrap-select.min.css" rel="stylesheet">
+        <link href="vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
     </head>
     <body>
 
@@ -30,20 +73,18 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://shirakcollege/public/usersAccount">Home</a></li>
+                    <li class="active"><a href="/resources/views/usersAccount/usersAccount.blade.php">Home</a></li>
                     <li><a href="#">Page 2</a></li>
                     <li><a href="#">Page 3</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-
-
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> {{ Auth::user()->name }}<span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> {{\Illuminate\Support\Facades\Auth::user()->name }}<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="http://shirakcollege/public/usersAccount#">HOME</a></li>
-                            <li><a href="http://shirakcollege/public/aboutUsers">ABOUT ME</a></li>
-                            <li><a href="http://shirakcollege/public/usersInfo">CHANGE</a></li>
+                            <li><a href="/resources/views/usersAccount/usersAccount.blade.php">HOME</a></li>
+                            <li><a href="/resources/views/aboutUsers/aboutUsersPhp.blade.php">ABOUT ME</a></li>
+                            <li><a href="/resources/views/usersInfo/usersInfo.blade.php">CHANGE</a></li>
                         </ul>
                     <li>
                         <a href="{{ route('logout') }}"
@@ -69,7 +110,7 @@
                 <div class="sidebar content-box" style="display: block;">
                     <ul class="nav">
                         <!-- Main menu -->
-                        <li><a href="http://shirakcollege/public/product"><i class="	glyphicon glyphicon-list-alt"></i>Product</a></li>
+                        <li><a href="/resources/views/product/product.blade.php"><i class="glyphicon glyphicon-list-alt"></i>Product</a></li>
                         <li><a href="tables.html"><i class="glyphicon glyphicon-book"></i> Category</a></li>
                         <li><a href="http://shirakcollege/public/content"><i class="glyphicon glyphicon-record"></i> Content</a></li>
                         <li><a href="editors.html"><i class="glyphicon glyphicon-pencil"></i> Orders</a></li>
